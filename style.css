@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --text-color: #e1e1e6;
+  --nav-text-color: #c4c4cc;
+  --secudary-color: #ffffff;
+  --btn-text-hover: #02799d;
+  --bg-img-home: url(./assets/mountains-universe-1.png);
+  --bg-img-universe: url(./assets/mountains-universe02.png);
+  --bg-img-explore: url(./assets/mountains-universe-3.png);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 4rem;
+
+  background-image: var(--bg-img-universe);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  font-family: "Roboto", sans-serif;
+}
+
+header,
+header nav {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 3.2rem;
+  text-align: center;
+}
+
+header nav a {
+  text-decoration: none;
+  font-size: 2rem;
+  line-height: 2.2rem;
+
+  cursor: pointer;
+
+  color: #c4c4cc;
+}
+
+header nav a:focus {
+  font-weight: bold;
+  color: var(--secudary-color);
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  color: var(--text-color);
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+}
+
+#app h1 {
+  margin-top: 17rem;
+  font-weight: 700;
+  font-size: 4.8rem;
+  color: var(--text-color);
+}
+
+#app button {
+  justify-content: center;
+  align-items: center;
+  padding: 12px 32px;
+
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  background-color: transparent;
+
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  text-transform: uppercase;
+  color: var(--secudary-color);
+
+  transition: all 0.3s ease;
+}
+
+#app button:hover {
+  background-color: var(--secudary-color);
+
+  color: var(--btn-text-hover);
+}
+
+.universe,
+.explore {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  align-self: flex-start;
+  padding: 6.3rem 0 0 10.2rem;
+}
+
+.universe h2,
+.explore h2 {
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 6rem;
+  margin-bottom: 1.6rem;
+}
+
+.universe p,
+.explore p {
+  font-size: 1.8rem;
+  line-height: 2.9rem;
+  width: 64.8rem;
+  text-align: justify;
+}
